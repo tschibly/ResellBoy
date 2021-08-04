@@ -27,46 +27,36 @@ const navSlide = () => {
 
 navSlide();
 
-const carouselSlide = document.querySelector('.carousel-slide');
-const carouselImages = document.querySelectorAll('.carousel-slide img');
-
-//Buttons
-const prevBtn = document.querySelector('#prevBtn');
-const nextBtn = document.querySelector('#nextBtn');
-
-//counter
-let counter1 = 1;
-const size = carouselImages[0].clientWidth;
-
-carouselSlide.style.transform = 'translateX(' + (-size * counter1) + 'px)';
-
-nextBtn.addEventListener('click',()=>{
-    if (counter1 >= carouselImages.length -1) return;
-    carouselSlide.style.transition = "transform 0.4s ease-in-out";
-    counter1++;
-    carouselSlide.style.transform = 'translateX(' + (-size * counter1) + 'px)';
-
-});
-
-prevBtn.addEventListener('click',()=>{
-    if (counter1 <= 0) return;
-    carouselSlide.style.transition = "transform 0.4s ease-in-out";
-    counter1--;
-    carouselSlide.style.transform = 'translateX(' + (-size * counter1) + 'px)';
-
-});
-
-carouselSlide.addEventListener('transitionend', ()=>{
-    if (carouselImages[counter].id === 'lastClone') {
-        carouselSlide.style.transition = "none";
-        counter1 = carouselImages.length -2 ;
-        carouselSlide.style.transform = 'translateX(' + (-size * counter1) + 'px)';
-
-    }
-    if (carouselImages[counter1].id === 'firstClone') {
-        carouselSlide.style.transition = "none";
-        counter1 = carouselImages.length - counter1 ;
-        carouselSlide.style.transform = 'translateX(' + (-size * counter1) + 'px)';
-
+// top selling owl carousel
+$(".top-selling .product-carousel .owl-carousel").owlCarousel({
+    loop: false,
+    nav: true,
+    dots: false,
+    responsive : {
+        0: {
+            items: 2
+        },
+        400: {
+            items: 2.5
+        },
+        600: {
+            items: 3
+        },
+        750: {
+            items: 4
+        },
+        900: {
+            items: 3
+        },
+        1000: {
+            items: 4
+        },
+        1200: {
+            items: 5
+        },
+        1300 : {
+            items: 6
+        }
     }
 });
+    

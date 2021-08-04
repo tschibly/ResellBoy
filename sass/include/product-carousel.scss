@@ -1,0 +1,119 @@
+.product-carousel{
+    height: 450px;
+    width: 1328px;
+    margin: auto;
+}
+
+.c-headline{
+    display: flex;
+}
+.c-headline h3{
+    text-align: left;
+    margin: auto;
+    margin-left: 0;
+}
+.c-headline h4{
+    text-align: right;
+    color: $c1;
+    margin: auto;
+    margin-right: 0;
+}
+
+.owl-item.active{
+    margin-right: 20px;
+    
+}
+
+.top-selling .product-carousel .owl-carousel .item .product-item .product a img{
+    width: 190px;
+    transition: transform .2s ease;
+    margin: auto;
+}
+
+.top-selling{
+    .owl-carousel .owl-nav button{
+        position: absolute;
+        top: 20%;
+        outline: none;
+    }
+    .owl-carousel .owl-nav button.owl-prev{
+        left: 0;
+    }
+
+    .owl-carousel .owl-nav button.owl-next span,
+    .owl-carousel .owl-nav button.owl-prev span{
+        font-size: 35px;
+        color: $c1;
+        padding: o 1rem;
+    }
+    .owl-carousel .owl-nav button.owl-next{
+        right: 0;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev span{
+        margin-left: -4rem;
+    }
+
+    .owl-carousel .owl-nav button.owl-next span{
+        margin-right: -4rem;
+    }
+
+}
+
+.display-none{
+    display: none;
+}
+
+@media screen and (max-width:1450px){
+    .product-carousel{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width:1200px){
+    .product-carousel{
+        max-width: 80%;
+    }
+}
+@media screen and (max-width:600px){
+    .product-carousel{
+        max-width: 90%;
+    }
+    .top-selling{
+        .owl-carousel .owl-nav button{
+            display: none;
+        } 
+    }
+}
+
+@media screen and (max-width: 900px){
+    .top-selling{
+        
+        .products{
+            width: 319px;
+        }
+            
+        .product-item{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 144px;
+        }
+        
+            
+        .product-carousel .owl-carousel .item .product-item .product a img{
+            width: 135px;
+        }
+        
+        .display-none{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 319.1px){
+
+    
+    .top-selling .product-carousel .owl-carousel .item .product-item .product a img{
+        width: 125px;
+    }
+}
+
