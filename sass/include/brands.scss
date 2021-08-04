@@ -1,0 +1,60 @@
+/* brands*/
+.brands{   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 7vh;
+    background-color: white;
+}
+
+.brand-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.brand-links li{
+    list-style: none;
+}
+
+.brand-links a{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.brand-on a,
+.brand-links a:hover{
+    border-bottom: black 5px solid;
+    font-weight: 600;
+}
+
+
+
+@media screen and (max-width:1200px){
+    .brand-links {
+        width: 60%;
+    }   
+}
+@media screen and (max-width: 960px){
+    .brand-links {
+        width: 75%;
+    }   
+}
+@media screen and (max-width: 735px){
+    .brand-links {
+        width: 95%;
+    }     
+}
+@media screen and (max-width: 520px){
+    .brand-links a{
+        font-size: 14px;
+    }
+
+    .brand-on a,
+    .brand-links a:hover{
+    border-bottom: black 2.5px solid;
+    font-weight: 600;
+    }
+}

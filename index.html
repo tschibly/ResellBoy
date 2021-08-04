@@ -2,36 +2,47 @@
 
 <html Lang="en">
     <head>
-        <title>Resell Boy</title>
+        <title>sneaker boy</title>
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <mata charset="UTF-8">
+
+            <!--google fonts roboto-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+            <!--font awesome-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
     </head>
     <body>
         <nav>
-            <div class="logo-image">
-                <img src="logo1.png">
-            </div>
             <div class="logo">
-                <h4>Resell Boy</h4>
+                <h4>sneaker</h4>
+                <img class="logo-image" src="./assets/shoe_1.png" alt="">
+                <h4>boy</h4>
             </div>
             <ul class="nav-links">
                 <li>
                     <div class="nav-on">
-                        <a href="#">Home</a>
+                        <a href="#">Shop</a>
                     </div>
                 </li>
                 <li>
-                    <a href="aboutme.html">about me</a>
+                    <a href="">News</a>
                 </li>
                 <li>
-                    <a href="brand.html">Brand</a>
+                    <a href="#">Orders</a>
                 </li>
                 <li>
-                    <a href="#">Shop</a>
+                    <a href="#">Login</a>
+                </li>
+                <li>
+                    <a href="#">My Shop</a>
                 </li>
             </ul>
+
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -39,101 +50,257 @@
             </div>
         </nav>
 
-        <div id="main">
-            <div id="part1">
-                <section class="presentation">
-                    <div class="introduction">
-                        <div class="intro-text">
-                            <h1>Resell Boy</h1>
-                            <p>
-                                Our goal is to deliver our customers not only shoes, we deliver a livestyle.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="cover">
-                        <img src="img1.jpg" alt="matebook" />
-                    </div>
-                </section>
-    
-            </div>
-            <div id="part2">
-                <div id="part1-1">
-                    <div id="part1-1-1">
-                        <p class="h1">shoes are an adventure
-                        </p>
-                        <p class="h2">est. 2021</p>
-                        <p class="t1">Musik ist eine Sprache die jeder versteht, sie verbindet Menschen. Doch alleine zu musizieren wird irgendwann langweiig, doch das ist kein Problem, denn wir können alle gemeinsam musizieren</p>
-                    </div>
-                </div>
-            </div>
-            <div class="part3">
-                             <!--image slider start-->
-                    <div class="slider">
-                        <div class="slides">
-                            <!--radio buttons start-->
-                            <input type="radio" name="radio-btn" id="radio1">
-                            <input type="radio" name="radio-btn" id="radio2">
-                            <input type="radio" name="radio-btn" id="radio3">
-                            <input type="radio" name="radio-btn" id="radio4">
-                            <!--radio buttoms end-->
-                            <!--slide images start-->
-                            <div class="slide first">
-                                <img src="img21.jpg" alt="">
-                            </div>
-                            <div class="slide">
-                                <img src="img22.jpg" alt="">
-                            </div>
-                            <div class="slide">
-                                <img src="img23.jpg" alt="">
-                            </div>
-                            <div class="slide">
-                                <img src="img24.jpg" alt="">
-                            </div>
-                            <!--slide images end-->
-                            <!--automatic navigation start-->
-                            <div class="navigation-auto">
-                                <div class="auto-btn1"></div>
-                                <div class="auto-btn2"></div>
-                                <div class="auto-btn3"></div>
-                                <div class="auto-btn4"></div>
-                            </div>
-                            <!--automatic navigation end-->
-                        </div>
-                            <!--manual navigation start-->
-                        <div class="navigation-manual">
-                            <label for="radio1" class="manual-btn"></label>
-                            <label for="radio2" class="manual-btn"></label>
-                            <label for="radio3" class="manual-btn"></label>
-                            <label for="radio4" class="manual-btn"></label>
-                        </div>
-                            <!--manual navigation end-->
-                    </div>
-                            <!--image slider end-->
-            
-                    <script type="text/javascript">
-                    var counter = 1;
-                    setInterval(function(){
-                        document.getElementById('radio' + counter).checked = true;
-                        counter++;
-                        if(counter > 4){
-                            counter = 1;
-                        }
-                    }, 5000);
-                    </script>
-            </div>
-            <div id="part4">
-                <div id="content4">
-                    <p class="h3">and this is me</p>
-                    <p class="h1">Even Thomsen</p>
-                    <img src="img4.jpg" alt="">
-                </div>
-            </div>
-        <div id="footer">
-            <div id="footer-image">
-                <img src="logo.jpg.png" alt="">
+        
+        <div id="introduction-board">
+            <div class="intro-text">
+                <h1>Sneaker Boy</h1>
+                <h4>is your site to buy and sell your sneakers</h4>
             </div>
         </div>
-
+        <div id="main">
+            <div class="brands">
+                <ul class="brand-links">
+                    <li>
+                        <div class="brand-on">
+                            <a href="#">Discover</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">Nike</a>
+                    </li>
+                    <li>
+                        <a href="#">Addidas</a>
+                    </li>
+                    <li>
+                        <a href="#">Yeezy</a>
+                    </li>
+                    <li>
+                        <a href="#">others</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="brands-hr"></div>
+            <div class="products">
+                <div class="product-item">
+                    <div class="item">
+                        <div class="product">
+                            <a href=""><img src="./assets/shoe1.png"></a>
+                            <div class="pro-infos">
+                                <h2>Adidas <br> Superstar</h2>
+                                <div class="price">
+                                    <span>$152</span>
+                                </div>
+                                <button type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item">
+                        <div class="product">
+                            <a href=""><img src="./assets/shoe2.png"></a>
+                            <div class="pro-infos">
+                                <h2>Adidas <br> Superstar</h2>
+                                <div class="price">
+                                    <span>$152</span>
+                                </div>
+                                <button type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item">
+                        <div class="product">
+                            <a href=""><img src="./assets/shoe3.png"></a>
+                            <div class="pro-infos">
+                                <h2>Adidas <br> Superstar</h2>
+                                <div class="price">
+                                    <span>$152</span>
+                                </div>
+                                <button type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item">
+                        <div class="product">
+                            <a href=""><img src="./assets/shoe4.png"></a>
+                            <div class="pro-infos">
+                                <h2>Adidas <br> Superstar</h2>
+                                <div class="price">
+                                    <span>$152</span>
+                                </div>
+                                <button type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item">
+                        <div class="product">
+                            <a href=""><img src="./assets/shoe1.png"></a>
+                            <div class="pro-infos">
+                                <h2>Adidas <br> Superstar</h2>
+                                <div class="price">
+                                    <span>$152</span>
+                                </div>
+                                <button type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item">
+                        <div class="product">
+                            <a href=""><img src="./assets/shoe2.png"></a>
+                            <div class="pro-infos">
+                                <h2>Adidas <br> Superstar</h2>
+                                <div class="price">
+                                    <span>$152</span>
+                                </div>
+                                <button type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item">
+                        <div class="product">
+                            <a href=""><img src="./assets/shoe3.png"></a>
+                            <div class="pro-infos">
+                                <h2>Adidas <br> Superstar</h2>
+                                <div class="price">
+                                    <span>$152</span>
+                                </div>
+                                <button type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item">
+                        <div class="product">
+                            <a href=""><img src="./assets/shoe4.png"></a>
+                            <div class="pro-infos">
+                                <h2>Adidas <br> Superstar</h2>
+                                <div class="price">
+                                    <span>$152</span>
+                                </div>
+                                <button type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item">
+                        <div class="product">
+                            <a href=""><img src="./assets/shoe1.png"></a>
+                            <div class="pro-infos">
+                                <h2>Adidas <br> Superstar</h2>
+                                <div class="price">
+                                    <span>$152</span>
+                                </div>
+                                <button type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item">
+                        <div class="product">
+                            <a href=""><img src="./assets/shoe2.png"></a>
+                            <div class="pro-infos">
+                                <h2>Adidas <br> Superstar</h2>
+                                <div class="price">
+                                    <span>$152</span>
+                                </div>
+                                <button type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item">
+                        <div class="product">
+                            <a href=""><img src="./assets/shoe3.png"></a>
+                            <div class="pro-infos">
+                                <h2>Adidas <br> Superstar</h2>
+                                <div class="price">
+                                    <span>$152</span>
+                                </div>
+                                <button type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item">
+                        <div class="product">
+                            <a href=""><img src="./assets/shoe4.png"></a>
+                            <div class="pro-infos">
+                                <h2>Adidas <br> Superstar</h2>
+                                <div class="price">
+                                    <span>$152</span>
+                                </div>
+                                <button type="submit">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+        </div>
+                            
+        <!--start #footer-->
+        <footer id="footer">
+            <div class="row">
+                <div class="col-220">
+                <h4 class="footer-headline">Sneaker Boy</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, deserunt.</p>
+                </div>
+                <div class="col-220">
+                <h4>Newslatter</h4>
+                <form class="form">
+                    <div class="col">
+                    <input type="text" placeholder="Email *">
+                    </div>
+                    <div class="col">
+                    <button type="submit">Subscribe</button>
+                    </div>
+                </form>
+                </div>
+                <div class="col-220">
+                <h4>Information</h4>
+                <div class="flex-list">
+                    <a href="#">About Us</a>
+                    <a href="#">Delivery Information</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+                </div>
+                <div class="col-220">
+                <h4>Account</h4>
+                <div class="flex-list">
+                    <a href="#">My Account</a>
+                    <a href="#">Order History</a>
+                    <a href="#">Wish List</a>
+                    <a href="#">Newslatters</a>
+                </div>
+                </div>
+            </div>
+        </footer>
+    <div class="copyright">
+        <p>&copy; Copyrights 2021. Desing By Tschibly<a href="#" style="color: #0645ad">Daily Tuition</a></p>
+    </div>
+    <!--!start #footer-->
+        </div>
+        
         <script src="app.js"></script>
     </body>
 </html>

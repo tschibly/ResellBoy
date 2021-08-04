@@ -1,0 +1,117 @@
+/*footer*/
+#footer{
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.row{
+    margin: auto;
+    text-align: left;
+    max-width: 1106px;  
+}
+
+.row h4{
+    font-size: 20px;
+}
+.row p,
+.row a{
+    font-size: 14px;
+    color: gray;
+}
+.row a{
+    padding-bottom: 5px;
+}
+
+.col-220{
+    width: 220px;
+    margin: auto;
+    margin-top: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.flex-list{
+    display: inline-flex;
+    flex-flow: wrap;
+    flex-direction: column;
+}
+
+.copyright{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.copyright p{
+    font-size: 14px;
+}
+
+.form input{
+    outline: none;
+    font-size: 14px;
+    border: none;
+    background-color: white;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 2px;
+}
+.form button{
+    font-size: 14px;
+    padding: 2px 5px 2px 5px;
+    color: black;
+    border:  $c1 1px solid;
+    background-color:  $c1;
+    border-radius: 2px;
+}
+
+.footer-headline{
+    color:  $c1;
+}
+
+@media screen and (max-width:1200px){
+    .row{
+        max-width: 884.8px;  
+    }   
+
+    .col-220{
+        width: 190px;
+    }
+}
+@media screen and (max-width:960px){
+    .row{
+        max-width: 663.6px;  
+    }   
+
+    .col-220{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 735px){
+    .row{
+        max-width: 442.4px;
+    }
+
+    .col-220{
+        width: 190px;
+    }
+    
+}
+@media screen and (max-width: 520px){
+    .row{
+        max-width: 90%;
+    }
+
+    .col-220{
+        width: 40%;
+    }
+    
+}
