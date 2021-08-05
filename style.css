@@ -586,10 +586,16 @@ nav {
   .col-220 {
     width: 40%;
   }
+
+  .last-col form,
+.last-col h4,
+.last-col .flex-list a {
+    margin-left: -10vw;
+  }
 }
 .product-carousel {
   height: 450px;
-  width: 1328px;
+  width: 1428px;
   margin: auto;
 }
 
@@ -621,36 +627,38 @@ nav {
 }
 
 .top-selling .owl-carousel .owl-nav button {
-  position: absolute;
-  top: 20%;
-  outline: none;
-}
-.top-selling .owl-carousel .owl-nav button.owl-prev {
-  left: 0;
-}
-.top-selling .owl-carousel .owl-nav button.owl-next span,
-.top-selling .owl-carousel .owl-nav button.owl-prev span {
-  font-size: 35px;
-  color: #00A5C4;
-  padding: o 1rem;
-}
-.top-selling .owl-carousel .owl-nav button.owl-next {
-  right: 0;
-}
-.top-selling .owl-carousel .owl-nav button.owl-prev span {
-  margin-left: -4rem;
-}
-.top-selling .owl-carousel .owl-nav button.owl-next span {
-  margin-right: -4rem;
-}
-
-.display-none {
   display: none;
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1500px) {
   .product-carousel {
     max-width: 90%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .top-selling .owl-carousel .owl-nav button {
+    position: absolute;
+    top: 20%;
+    outline: none;
+    display: block;
+  }
+  .top-selling .owl-carousel .owl-nav button.owl-prev {
+    left: 0;
+  }
+  .top-selling .owl-carousel .owl-nav button.owl-next span,
+.top-selling .owl-carousel .owl-nav button.owl-prev span {
+    font-size: 35px;
+    color: #00A5C4;
+    padding: o 1rem;
+  }
+  .top-selling .owl-carousel .owl-nav button.owl-next {
+    right: 0;
+  }
+  .top-selling .owl-carousel .owl-nav button.owl-prev span {
+    margin-left: -4rem;
+  }
+  .top-selling .owl-carousel .owl-nav button.owl-next span {
+    margin-right: -4rem;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -668,6 +676,9 @@ nav {
   }
 }
 @media screen and (max-width: 900px) {
+  .top-selling .product-carousel {
+    height: 350px;
+  }
   .top-selling .products {
     width: 319px;
   }
@@ -678,9 +689,6 @@ nav {
   }
   .top-selling .product-carousel .owl-carousel .item .product-item .product a img {
     width: 135px;
-  }
-  .top-selling .display-none {
-    display: none;
   }
 }
 @media screen and (max-width: 319.1px) {

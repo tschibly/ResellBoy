@@ -1,6 +1,6 @@
 .product-carousel{
     height: 450px;
-    width: 1328px;
+    width: 1428px;
     margin: auto;
 }
 
@@ -32,41 +32,48 @@
 
 .top-selling{
     .owl-carousel .owl-nav button{
-        position: absolute;
-        top: 20%;
-        outline: none;
-    }
-    .owl-carousel .owl-nav button.owl-prev{
-        left: 0;
-    }
-
-    .owl-carousel .owl-nav button.owl-next span,
-    .owl-carousel .owl-nav button.owl-prev span{
-        font-size: 35px;
-        color: $c1;
-        padding: o 1rem;
-    }
-    .owl-carousel .owl-nav button.owl-next{
-        right: 0;
-    }
-
-    .owl-carousel .owl-nav button.owl-prev span{
-        margin-left: -4rem;
-    }
-
-    .owl-carousel .owl-nav button.owl-next span{
-        margin-right: -4rem;
-    }
-
+        display: none;
+    } 
 }
 
-.display-none{
-    display: none;
-}
 
-@media screen and (max-width:1450px){
+@media screen and (max-width:1500px){
     .product-carousel{
         max-width: 90%;
+    }
+}
+
+
+@media screen and (max-width:1400px){
+    .top-selling{
+        .owl-carousel .owl-nav button{
+            position: absolute;
+            top: 20%;
+            outline: none;
+            display: block;
+        }
+        .owl-carousel .owl-nav button.owl-prev{
+            left: 0;
+        }
+    
+        .owl-carousel .owl-nav button.owl-next span,
+        .owl-carousel .owl-nav button.owl-prev span{
+            font-size: 35px;
+            color: $c1;
+            padding: o 1rem;
+        }
+        .owl-carousel .owl-nav button.owl-next{
+            right: 0;
+        }
+    
+        .owl-carousel .owl-nav button.owl-prev span{
+            margin-left: -4rem;
+        }
+    
+        .owl-carousel .owl-nav button.owl-next span{
+            margin-right: -4rem;
+        }
+    
     }
 }
 @media screen and (max-width:1200px){
@@ -87,6 +94,10 @@
 
 @media screen and (max-width: 900px){
     .top-selling{
+
+        .product-carousel{
+            height: 350px;
+        }
         
         .products{
             width: 319px;
@@ -101,10 +112,6 @@
             
         .product-carousel .owl-carousel .item .product-item .product a img{
             width: 135px;
-        }
-        
-        .display-none{
-            display: none;
         }
     }
 }

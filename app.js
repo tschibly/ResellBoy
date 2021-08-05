@@ -32,6 +32,8 @@ $(".top-selling .product-carousel .owl-carousel").owlCarousel({
     loop: false,
     nav: true,
     dots: false,
+    autoWidth:true,
+    afterInit: setWidth(),
     responsive : {
         0: {
             items: 2
@@ -56,7 +58,18 @@ $(".top-selling .product-carousel .owl-carousel").owlCarousel({
         },
         1300 : {
             items: 6
+        },
+        1400 : {
+            items: 7
         }
     }
 });
+
+function setWidth(){
+    setTimeout(function(){
+        var carWidth = $('.owl-stage').width() + 1500;
+        $('.owl-stage').width(carWidth);
+    },800);
+
+}
     
